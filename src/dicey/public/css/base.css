@@ -30,4 +30,24 @@ a{
 }
 body{
   text-align: center;
+  background-color: white;
+}
+#container{
+  background-color: lightgray;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  display: inline;
+  list-style-type: none;
+}
+li{
+  display: inline;
+}
+#answer{
+  margin-left: 40%;
+  margin-right: 40%;
+  background-color: red;
 }

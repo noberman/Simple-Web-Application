@@ -1,6 +1,23 @@
-
-<strong>Current value of "myName":</strong> {{myName}}
-<form method="POST" action="/">
-  Enter your name: <input type="text" name="myName">
-  <input type="submit">
+<form method="GET" action="">
+		Number of words: <input type="numWords" name="numWords" value="">
+    Seperator: <select name="glue">
+      <option value="space"> space " "</option>
+      <option value="dash"> dash "-"</option>
+      <option value="comma"> comma ","</option>
+      <option value="star"> star "*"</option>
+      <option value="none"> none ""</option>
+    </select>
+		<input type="Submit">
 </form>
+
+<div id="container">
+{{#if flag}}
+Generated Passphrase:
+<br>
+<div id="answer">
+  <h3>{{answer}}</h3>
+</div>
+  <p>{{answerWords}}</p>
+  <p>{{answerNums}}</p>
+{{/if}}
+</div>
