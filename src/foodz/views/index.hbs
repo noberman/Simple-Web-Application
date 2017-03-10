@@ -1,39 +1,42 @@
-<!-- <h2>Recommended Meals:</h2>
+<h2>Recommended Meals:</h2>
 <form action="" method="GET">
-  //use radio buttons
 
-  //name radio buttons filterCategory
-  //breakfast
-  //lunch
-  //dinner
-  //anytime
-  <input type="Submit">
+  <input type="radio" name="filterCategory" value="breakfast"> Breakfast
+  <input type="radio" name="filterCategory" value="lunch"> Lunch
+  <input type="radio" name="filterCategory" value="dinner"> Dinner
+  <input type="radio" name="filterCategory" value="anytime"> Anytime
+
+
+  <input type="Submit" value="Filter Meals">
 </form>
-</h2>Add a Meal Recommendation</h2>
+
+<fieldset>
+  <h1>Recommended Meals</h1>
+</fieldset>
+
+<h2>Add a Meal Recommendation</h2>
+
 <form action="" method="POST">
-  //2 text input fields
-  //name
-  //description
-  //radio buttons for: (name them filterCategory)
-  //breakfast
-  //lunch
-  //dinner
-  //anytime
-</form> -->
-<form>
+  <br>
+  <input type="radio" name="filterCategory" value="breakfast"> Breakfast
+  <input type="radio" name="filterCategory" value="lunch"> Lunch
+  <input type="radio" name="filterCategory" value="dinner"> Dinner
+  <input type="radio" name="filterCategory" value="anytime"> Anytime
+
   <fieldset>
-    <legend>Fruit juice size</legend>
-    <p>
-      <input type="radio" name="size" id="size_1" value="small">
-      <label for="size_1">Small</label>
-    </p>
-    <p>
-      <input type="radio" name="size" id="size_2" value="medium">
-      <label for="size_2">Medium</label>
-    </p>
-    <p>
-      <input type="radio" name="size" id="size_3" value="large">
-      <label for="size_3">Large</label>
-    </p>
+    <legend>Add a Meal here!</legend>
+    <div>
+      <label for="mealName">Name : <abbr title="required">*</abbr></label>
+      <input id="mealName" type="text" name="mealName">
+    </div>
+    <div>
+      <label for="mealDescription">Meal Description : <abbr title="required">*</abbr></label>
+      <input id="mealDescription" type="text" name="mealDescription">
+    </div>
   </fieldset>
+
+  <div class="button">
+  <button type="submit">Add Meal</button>
+</div>
+
 </form>
