@@ -64,3 +64,10 @@ h2 {
 p{
   text-align: center;
 }
+li{
+  text-decoration: none;
+  text-align: center;
+}
+ul{
+  list-style-type: none;
+}

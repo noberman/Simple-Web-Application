@@ -12,6 +12,13 @@
 
 <fieldset>
   <h1>Recommended Meals</h1>
+  <ul>
+  {{#each food}}
+    <li><h3>{{this.name}} ( {{this.time}} )</h3>
+      <h4> {{this.description}}</h4>
+     </li>
+  {{/each}}
+  </ul>
 </fieldset>
 
 <h2>Add a Meal Recommendation</h2>
